@@ -5,7 +5,7 @@ This sample shows how to create Command View Set working with single and multipl
 Once selected some files, it will show file sizes representation using a [React D3 TreeMap component](https://www.npmjs.com/package/react-d3-treemap).
 This sample also shows how to integrate [D3.js](https://d3js.org/) third party components within SharePoint Framework.
 
-![react-command-file-size-viewer-1](./assets/FileSizeViewer.png)
+![react-command-file-size-viewer-1](./assets/FileSizeViewer.gif)
 
 ## Used SharePoint Framework Version 
 ![drop](https://img.shields.io/badge/version-1.1-green.svg)
