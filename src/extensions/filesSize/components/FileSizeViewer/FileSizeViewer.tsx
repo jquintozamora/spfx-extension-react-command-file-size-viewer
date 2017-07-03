@@ -18,11 +18,11 @@ export class FileSizeViewer extends React.Component<IFileSizeViewerProps, {}> {
         height={300}
         width={600}
         data={this.props.data}
-        valueUnit={"MB"}
+        valueUnit={"KB"}
         colorModel={ColorModel.Depth}
-        disableBreadcrumb= { true}
-        bgColorRangeLow={"#007AFF"}
-        bgColorRangeHigh={"#FFFF00"}
+        disableBreadcrumb={true}
+        bgColorRangeLow={"#757575"}
+        bgColorRangeHigh={"#33ccff"}
       />
     );
   }

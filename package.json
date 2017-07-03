@@ -1,18 +1,18 @@
 {
-  "name": "react-command-files-size",
+  "name": "react-command-file-size-viewer",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "engines": {
     "node": ">=0.10.0"
   },
   "dependencies": {
     "@microsoft/sp-application-base": "1.1.1",
     "@microsoft/sp-core-library": "~1.1.0",
-    "@microsoft/sp-dialog": "^0.1.1",
+    "@microsoft/sp-dialog": "0.1.1",
     "@microsoft/sp-listview-extensibility": "0.1.1",
     "@microsoft/sp-webpart-base": "~1.1.1",
     "@types/webpack-env": ">=1.12.1 <1.14.0",
-    "react-d3-treemap": "1.0.7"
+    "react-d3-treemap": "1.0.8"
   },
   "devDependencies": {
     "@microsoft/sp-build-web": "~1.1.0",

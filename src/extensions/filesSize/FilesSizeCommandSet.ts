@@ -54,9 +54,21 @@ export default class FilesSizeCommandSet
       case 'FilesSize':
         if (event.selectedRows.length >= 0) {
           console.log(`Clicked ${strings.FilesSize}`);
-          const e = event.selectedRows;
-          debugger;
+
+          const values = event.selectedRows.map((item) => {
+            const size: number = item.getValueByName("File_x0020_Size");
+            const sizeKB: number = size / 1024 ;
+            const name: string = item.getValueByName("FileName");
+            const id: string = item.getValueByName("ID");
+            return { name, id, value: sizeKB };
+          });
+          const data = {
+            "name": "Total",
+            "children": values
+          };
+
           const dialog: ReactBaseDialog = new ReactBaseDialog();
+          dialog.data = data;
           dialog.show();
         }
         break;

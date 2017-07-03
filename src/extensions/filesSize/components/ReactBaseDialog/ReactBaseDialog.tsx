@@ -6,22 +6,21 @@ import { BaseDialog, IDialogConfiguration } from '@microsoft/sp-dialog';
 import { DialogContent } from '@microsoft/sp-dialog';
 
 import { FileSizeViewer } from "../../components/FileSizeViewer/FileSizeViewer";
-import { data } from "../../data/data";
+// import { data } from "../../data/data";
 
 
 export default class ReactBaseDialog extends BaseDialog {
-  public data: string;
+  public data: any;
 
   public render(): void {
     const reactElement =
       <DialogContent
-        title='File Size Viewer'
-        // subText="Description"
+        title="File Size Viewer"
         showCloseButton={true}
         onDismiss={this.close}
       >
         <FileSizeViewer
-          data={data}
+          data={this.data}
         />
       </DialogContent>;
 
